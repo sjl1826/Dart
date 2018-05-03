@@ -18,7 +18,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var empty: UILabel!
     
-    let colorPalette: [UIColor] = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green, UIColor.magenta, UIColor.purple, UIColor.cyan, UIColor.orange]
+    let colorPalette: [UIColor] = [UIColor.clear, UIColor.clear, UIColor.yellow, UIColor.green, UIColor.magenta, UIColor.purple, UIColor.cyan, UIColor.orange]
     var dinings = [String]()
     
     func wedgeForSliceAtIndex(index: UInt) -> SpinWheelWedge {
@@ -27,6 +27,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         wedge.shape.fillColor = colorPalette[Int(index)].cgColor
         wedge.label.text = dinings[Int(index)]
         wedge.label.textColor = UIColor.black
+        wedge.label.highlightedTextColor = UIColor.black
         wedge.isOpaque = true
         return wedge
     }
