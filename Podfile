@@ -9,6 +9,7 @@ target 'Dart' do
   pod 'SwiftSoup'
   pod 'SpinWheelControl'
   pod 'UIView+Shake'
+  pod 'VariousViewsEffects'
 
   target 'DartTests' do
     inherit! :search_paths

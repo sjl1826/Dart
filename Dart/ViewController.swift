@@ -10,12 +10,16 @@ import UIKit
 import SwiftSoup
 import SpinWheelControl
 import UIView_Shake
+import VariousViewsEffects
 
 
 class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelControlDelegate {
     
     
+    @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var circle: UIImageView!
     @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var viesualView: UIVisualEffectView!
     
     @IBOutlet weak var empty: UILabel!
     
@@ -38,7 +42,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        restartButton.isHidden = true
         dinings = getData()
         if (dinings.count == 0) {
             empty.text = "Must be connected to the Internet!"
@@ -73,7 +77,12 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         print("The spin wheel did end decelerating.")
         self.view.shake(2, withDelta: 8, speed: 0.1)
         print(self.spinWheelControl.selectedIndex)
-        result.text = dinings[self.spinWheelControl.selectedIndex]
+        result.text = dinings[self.spinWheelControl.selectedIndex] + "!!!"
+        circle.isHidden = true
+        spinWheelControl.isHidden = true
+        restartButton.isHidden = false
+        viesualView.breakGlass()
+        
     }
     
     
@@ -110,4 +119,18 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         }
         return [String]()
     }
+    
+    @IBAction func reChoose(_ sender: Any) {
+        self.viesualView?.alpha = 0
+        self.viesualView?.isHidden = false
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.viesualView?.alpha = 1
+        })
+        circle.isHidden = false
+        spinWheelControl.isHidden = false
+        
+    }
+    
+    
 }
