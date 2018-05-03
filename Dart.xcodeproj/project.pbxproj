@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A79BA679160E20A92C8FB4 /* Pods_DartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB85960A1F8BC6F32FBD5293 /* Pods_DartUITests.framework */; };
 		2D8026ED209A84F6001ECD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8026EC209A84F6001ECD84 /* AppDelegate.swift */; };
 		2D8026EF209A84F6001ECD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8026EE209A84F6001ECD84 /* ViewController.swift */; };
 		2D8026F2209A84F6001ECD84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8026F0209A84F6001ECD84 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		2D8026FA209A8501001ECD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8026F8209A8501001ECD84 /* LaunchScreen.storyboard */; };
 		2D802705209A8502001ECD84 /* DartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D802704209A8502001ECD84 /* DartTests.swift */; };
 		2D802710209A8502001ECD84 /* DartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80270F209A8502001ECD84 /* DartUITests.swift */; };
+		9197131A69A629F928FB580F /* Pods_DartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BA7E38B5FC109D67A532C6 /* Pods_DartTests.framework */; };
+		9EDBC44859823D26A32F5758 /* Pods_Dart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD455753AE3C402E7E511A9 /* Pods_Dart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16571D2B673D1A5252C0C358 /* Pods-DartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DartUITests/Pods-DartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D8026E9209A84F6001ECD84 /* Dart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8026EC209A84F6001ECD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8026EE209A84F6001ECD84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		2D80270B209A8502001ECD84 /* DartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D80270F209A8502001ECD84 /* DartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartUITests.swift; sourceTree = "<group>"; };
 		2D802711209A8502001ECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42723368FBA8A0DDBCC629FB /* Pods-Dart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dart/Pods-Dart.debug.xcconfig"; sourceTree = "<group>"; };
+		4DD455753AE3C402E7E511A9 /* Pods_Dart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E65713A58E79C83C09A24AD /* Pods-DartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DartTests/Pods-DartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76173B3133230F5A1D14D813 /* Pods-DartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DartTests/Pods-DartTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C4F1B143E0714B660B2F952 /* Pods-DartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DartUITests/Pods-DartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5B18BDD23E7AAF0C3928280 /* Pods-Dart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dart/Pods-Dart.release.xcconfig"; sourceTree = "<group>"; };
+		B3BA7E38B5FC109D67A532C6 /* Pods_DartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB85960A1F8BC6F32FBD5293 /* Pods_DartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EDBC44859823D26A32F5758 /* Pods_Dart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9197131A69A629F928FB580F /* Pods_DartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A79BA679160E20A92C8FB4 /* Pods_DartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2D802703209A8502001ECD84 /* DartTests */,
 				2D80270E209A8502001ECD84 /* DartUITests */,
 				2D8026EA209A84F6001ECD84 /* Products */,
+				5ADDBBEABD3BEC1944E5B6E2 /* Pods */,
+				37E96CEA9B44F9DB3A547697 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = DartUITests;
 			sourceTree = "<group>";
 		};
+		37E96CEA9B44F9DB3A547697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DD455753AE3C402E7E511A9 /* Pods_Dart.framework */,
+				B3BA7E38B5FC109D67A532C6 /* Pods_DartTests.framework */,
+				BB85960A1F8BC6F32FBD5293 /* Pods_DartUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5ADDBBEABD3BEC1944E5B6E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42723368FBA8A0DDBCC629FB /* Pods-Dart.debug.xcconfig */,
+				A5B18BDD23E7AAF0C3928280 /* Pods-Dart.release.xcconfig */,
+				6E65713A58E79C83C09A24AD /* Pods-DartTests.debug.xcconfig */,
+				76173B3133230F5A1D14D813 /* Pods-DartTests.release.xcconfig */,
+				16571D2B673D1A5252C0C358 /* Pods-DartUITests.debug.xcconfig */,
+				9C4F1B143E0714B660B2F952 /* Pods-DartUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D802714209A8502001ECD84 /* Build configuration list for PBXNativeTarget "Dart" */;
 			buildPhases = (
+				CBCAC5A62BAEE64D7C25DBA8 /* [CP] Check Pods Manifest.lock */,
 				2D8026E5209A84F6001ECD84 /* Sources */,
 				2D8026E6209A84F6001ECD84 /* Frameworks */,
 				2D8026E7209A84F6001ECD84 /* Resources */,
+				20CDF35C43764CDD36A2B679 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D802717209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartTests" */;
 			buildPhases = (
+				FA0D60467EF65D4DA2707E6E /* [CP] Check Pods Manifest.lock */,
 				2D8026FC209A8502001ECD84 /* Sources */,
 				2D8026FD209A8502001ECD84 /* Frameworks */,
 				2D8026FE209A8502001ECD84 /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D80271A209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartUITests" */;
 			buildPhases = (
+				58638434DC8BE68511C060EA /* [CP] Check Pods Manifest.lock */,
 				2D802707209A8502001ECD84 /* Sources */,
 				2D802708209A8502001ECD84 /* Frameworks */,
 				2D802709209A8502001ECD84 /* Resources */,
@@ -253,6 +297,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20CDF35C43764CDD36A2B679 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dart/Pods-Dart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dart/Pods-Dart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58638434DC8BE68511C060EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBCAC5A62BAEE64D7C25DBA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0D60467EF65D4DA2707E6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D8026E5209A84F6001ECD84 /* Sources */ = {
@@ -432,15 +551,13 @@
 		};
 		2D802715209A8502001ECD84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42723368FBA8A0DDBCC629FB /* Pods-Dart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = Dart/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.Dart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -450,15 +567,13 @@
 		};
 		2D802716209A8502001ECD84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B18BDD23E7AAF0C3928280 /* Pods-Dart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = Dart/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.Dart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -468,17 +583,14 @@
 		};
 		2D802718209A8502001ECD84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E65713A58E79C83C09A24AD /* Pods-DartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,17 +601,14 @@
 		};
 		2D802719209A8502001ECD84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76173B3133230F5A1D14D813 /* Pods-DartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -510,16 +619,13 @@
 		};
 		2D80271B209A8502001ECD84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16571D2B673D1A5252C0C358 /* Pods-DartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -530,16 +636,13 @@
 		};
 		2D80271C209A8502001ECD84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4F1B143E0714B660B2F952 /* Pods-DartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

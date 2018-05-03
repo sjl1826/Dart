@@ -1,0 +1,6 @@
+framework module Pods_DartTests {
+  umbrella header "Pods-DartTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
