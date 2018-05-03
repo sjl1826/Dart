@@ -18,7 +18,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var empty: UILabel!
     
-    let colorPalette: [UIColor] = [UIColor.clear, UIColor.clear, UIColor.yellow, UIColor.green, UIColor.magenta, UIColor.purple, UIColor.cyan, UIColor.orange]
+    let colorPalette: [UIColor] = [UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear]
     var dinings = [String]()
     
     func wedgeForSliceAtIndex(index: UInt) -> SpinWheelWedge {
@@ -40,7 +40,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         
         dinings = getData()
         if (dinings.count == 0) {
-            empty.text = "Sorry, no dining halls are open at the moment..."
+            empty.text = "Must be connected to the Internet!"
         }
         else {
         let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
