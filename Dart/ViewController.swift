@@ -8,30 +8,69 @@
 
 import UIKit
 import SwiftSoup
+import SpinWheelControl
 
-class ViewController: UIViewController {
-    var dininghalls: [String]?
-    @IBOutlet weak var answer: UILabel!
+
+class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelControlDelegate {
     
-    @IBAction func chooseHall(_ sender: UIButton) {
-        let random = Int(arc4random_uniform(UInt32(dininghalls!.count)))
-        answer.text = "You should eat at " + dininghalls![random]
+    
+    @IBOutlet weak var result: UILabel!
+    
+    let colorPalette: [UIColor] = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green, UIColor.magenta, UIColor.purple, UIColor.cyan, UIColor.orange]
+    var dinings = [String]()
+    
+    func wedgeForSliceAtIndex(index: UInt) -> SpinWheelWedge {
+        let wedge = SpinWheelWedge()
+        
+        wedge.shape.fillColor = colorPalette[Int(index)].cgColor
+        wedge.label.text = dinings[Int(index)]
+        wedge.label.textColor = UIColor.black
+        wedge.isOpaque = true
+        return wedge
     }
+    
+    
+    var spinWheelControl:SpinWheelControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dininghalls = getData()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        dinings = getData()
+        let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
+        spinWheelControl = SpinWheelControl(frame: frame)
+        spinWheelControl.addTarget(self, action: #selector(spinWheelDidChangeValue), for: UIControlEvents.valueChanged)
+        
+        spinWheelControl.dataSource = self
+        spinWheelControl.reloadData()
+        
+        spinWheelControl.delegate = self
+        
+        self.view.addSubview(spinWheelControl)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func numberOfWedgesInSpinWheel(spinWheel: SpinWheelControl) -> UInt {
+        return UInt(getData().count)
+    }
+    
+    
+    //Target was added in viewDidLoad for the valueChanged UIControlEvent
+    @objc func spinWheelDidChangeValue(sender: AnyObject) {
+        print("Value changed to " + String(self.spinWheelControl.selectedIndex))
+    }
+    
+    
+    func spinWheelDidEndDecelerating(spinWheel: SpinWheelControl) {
+        print("The spin wheel did end decelerating.")
+    }
+    
+    
+    func spinWheelDidRotateByRadians(radians: Radians) {
+        print("The wheel did rotate this many radians - " + String(describing: radians))
     }
     
     func getData() -> Array<String> {
         let myURLString = "http://menu.dining.ucla.edu"
-        
         guard let myURL = URL(string: myURLString) else {
             print("Error: \(myURLString) doesn't seem to be a valid URL")
             return [String]()
@@ -59,6 +98,4 @@ class ViewController: UIViewController {
         }
         return [String]()
     }
-    
-    
 }

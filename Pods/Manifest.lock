@@ -1,16 +1,20 @@
 PODS:
+  - SpinWheelControl (0.1.5)
   - SwiftSoup (1.7.1)
 
 DEPENDENCIES:
+  - SpinWheelControl
   - SwiftSoup
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - SpinWheelControl
     - SwiftSoup
 
 SPEC CHECKSUMS:
+  SpinWheelControl: a4c151fc62fcbed65b31804d0022f7161c47cc2b
   SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
 
-PODFILE CHECKSUM: f1fce4a308cc1bd33799b31864bf55cad60b831d
+PODFILE CHECKSUM: db5db7473e2fb10e46cb6a08f073ccd77aaa811e
 
 COCOAPODS: 1.5.0
