@@ -16,6 +16,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
     
     
     @IBOutlet weak var result: UILabel!
+    
     @IBOutlet weak var empty: UILabel!
     
     let colorPalette: [UIColor] = [UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear, UIColor.clear]
@@ -71,6 +72,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
     func spinWheelDidEndDecelerating(spinWheel: SpinWheelControl) {
         print("The spin wheel did end decelerating.")
         self.view.shake(2, withDelta: 8, speed: 0.1)
+        print(self.spinWheelControl.selectedIndex)
         result.text = dinings[self.spinWheelControl.selectedIndex]
     }
     
