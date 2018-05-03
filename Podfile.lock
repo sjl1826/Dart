@@ -1,20 +1,24 @@
 PODS:
   - SpinWheelControl (0.1.5)
   - SwiftSoup (1.7.1)
+  - "UIView+Shake (1.4.0)"
 
 DEPENDENCIES:
   - SpinWheelControl
   - SwiftSoup
+  - "UIView+Shake"
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - SpinWheelControl
     - SwiftSoup
+    - "UIView+Shake"
 
 SPEC CHECKSUMS:
   SpinWheelControl: a4c151fc62fcbed65b31804d0022f7161c47cc2b
   SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
+  "UIView+Shake": 055ad67721de1f74d29c0a1d464697e505dfc62f
 
-PODFILE CHECKSUM: db5db7473e2fb10e46cb6a08f073ccd77aaa811e
+PODFILE CHECKSUM: 55fe637dbef05d45d4239c8968605832406dc587
 
 COCOAPODS: 1.5.0

@@ -8,6 +8,7 @@ target 'Dart' do
   # Pods for Dart
   pod 'SwiftSoup'
   pod 'SpinWheelControl'
+  pod 'UIView+Shake'
 
   target 'DartTests' do
     inherit! :search_paths

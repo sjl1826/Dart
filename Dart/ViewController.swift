@@ -9,12 +9,14 @@
 import UIKit
 import SwiftSoup
 import SpinWheelControl
+import UIView_Shake
 
 
 class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelControlDelegate {
     
     
     @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var empty: UILabel!
     
     let colorPalette: [UIColor] = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green, UIColor.magenta, UIColor.purple, UIColor.cyan, UIColor.orange]
     var dinings = [String]()
@@ -36,6 +38,10 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         super.viewDidLoad()
         
         dinings = getData()
+        if (dinings.count == 0) {
+            empty.text = "Sorry, no dining halls are open at the moment..."
+        }
+        else {
         let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
         spinWheelControl = SpinWheelControl(frame: frame)
         spinWheelControl.addTarget(self, action: #selector(spinWheelDidChangeValue), for: UIControlEvents.valueChanged)
@@ -46,6 +52,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         spinWheelControl.delegate = self
         
         self.view.addSubview(spinWheelControl)
+        }
     }
     
     
@@ -62,6 +69,8 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
     
     func spinWheelDidEndDecelerating(spinWheel: SpinWheelControl) {
         print("The spin wheel did end decelerating.")
+        self.view.shake(2, withDelta: 8, speed: 0.1)
+        result.text = dinings[self.spinWheelControl.selectedIndex]
     }
     
     
