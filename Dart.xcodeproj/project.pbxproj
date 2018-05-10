@@ -15,9 +15,9 @@
 		2D8026FA209A8501001ECD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8026F8209A8501001ECD84 /* LaunchScreen.storyboard */; };
 		2D802705209A8502001ECD84 /* DartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D802704209A8502001ECD84 /* DartTests.swift */; };
 		2D802710209A8502001ECD84 /* DartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80270F209A8502001ECD84 /* DartUITests.swift */; };
-		2DC4B913209AAE7400091880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4B912209AAE7300091880 /* Main.storyboard */; };
 		9197131A69A629F928FB580F /* Pods_DartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BA7E38B5FC109D67A532C6 /* Pods_DartTests.framework */; };
 		9EDBC44859823D26A32F5758 /* Pods_Dart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD455753AE3C402E7E511A9 /* Pods_Dart.framework */; };
+		BD1825FF20A4AD0E00DBA060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1825FD20A4AD0E00DBA060 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		2D80270B209A8502001ECD84 /* DartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D80270F209A8502001ECD84 /* DartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartUITests.swift; sourceTree = "<group>"; };
 		2D802711209A8502001ECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DC4B912209AAE7300091880 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		42723368FBA8A0DDBCC629FB /* Pods-Dart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dart/Pods-Dart.debug.xcconfig"; sourceTree = "<group>"; };
 		4DD455753AE3C402E7E511A9 /* Pods_Dart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E65713A58E79C83C09A24AD /* Pods-DartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DartTests/Pods-DartTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		A5B18BDD23E7AAF0C3928280 /* Pods-Dart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dart/Pods-Dart.release.xcconfig"; sourceTree = "<group>"; };
 		B3BA7E38B5FC109D67A532C6 /* Pods_DartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB85960A1F8BC6F32FBD5293 /* Pods_DartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1825FE20A4AD0E00DBA060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				2D8026EE209A84F6001ECD84 /* ViewController.swift */,
 				2D8026F6209A8501001ECD84 /* Assets.xcassets */,
 				2D8026F8209A8501001ECD84 /* LaunchScreen.storyboard */,
-				2DC4B912209AAE7300091880 /* Main.storyboard */,
+				BD1825FD20A4AD0E00DBA060 /* Main.storyboard */,
 				2D8026FB209A8501001ECD84 /* Info.plist */,
 				2D8026F3209A84F6001ECD84 /* Dart.xcdatamodeld */,
 			);
@@ -276,9 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC4B913209AAE7400091880 /* Main.storyboard in Resources */,
 				2D8026FA209A8501001ECD84 /* LaunchScreen.storyboard in Resources */,
 				2D8026F7209A8501001ECD84 /* Assets.xcassets in Resources */,
+				BD1825FF20A4AD0E00DBA060 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +430,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		BD1825FD20A4AD0E00DBA060 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1825FE20A4AD0E00DBA060 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -555,7 +563,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = Dart/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.Dart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -571,7 +582,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = Dart/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.Dart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,7 +602,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -606,7 +624,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -623,7 +645,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -640,7 +666,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2HFG395R4;
 				INFOPLIST_FILE = DartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saml.DartUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

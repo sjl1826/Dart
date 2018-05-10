@@ -43,6 +43,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
     override func viewDidLoad() {
         super.viewDidLoad()
         restartButton.isHidden = true
+        result.isHidden = true
         dinings = getData()
         if (dinings.count == 0) {
             empty.text = "Must be connected to the Internet!"
@@ -78,6 +79,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         self.view.shake(2, withDelta: 8, speed: 0.1)
         print(self.spinWheelControl.selectedIndex)
         result.text = dinings[self.spinWheelControl.selectedIndex] + "!!!"
+        result.isHidden = false
         circle.isHidden = true
         spinWheelControl.isHidden = true
         restartButton.isHidden = false
@@ -100,7 +102,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         do {
             let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
             let doc: Document = try! SwiftSoup.parse(myHTMLString)
-            let mainContent: Elements = try! doc.select("#main-content").select("div").select("h2 ~ div").select(".half-col,.whole-col")
+            let mainContent: Elements = try! doc.select("#main-content").select("div").select("h2 ~ div").select(".whole-col")
             
             var food = [String]()
             
