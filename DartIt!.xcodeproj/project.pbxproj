@@ -39,17 +39,17 @@
 
 /* Begin PBXFileReference section */
 		16571D2B673D1A5252C0C358 /* Pods-DartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DartUITests/Pods-DartUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D8026E9209A84F6001ECD84 /* Dart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8026E9209A84F6001ECD84 /* Dart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Dart.app; path = "DartIt!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8026EC209A84F6001ECD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8026EE209A84F6001ECD84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D8026F4209A84F6001ECD84 /* Dart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dart.xcdatamodel; sourceTree = "<group>"; };
 		2D8026F6209A8501001ECD84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8026F9209A8501001ECD84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D8026FB209A8501001ECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D802700209A8502001ECD84 /* DartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D802700209A8502001ECD84 /* DartIt!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DartIt!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D802704209A8502001ECD84 /* DartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartTests.swift; sourceTree = "<group>"; };
 		2D802706209A8502001ECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D80270B209A8502001ECD84 /* DartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D80270B209A8502001ECD84 /* DartIt!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DartIt!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D80270F209A8502001ECD84 /* DartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartUITests.swift; sourceTree = "<group>"; };
 		2D802711209A8502001ECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42723368FBA8A0DDBCC629FB /* Pods-Dart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dart/Pods-Dart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				2D8026E9209A84F6001ECD84 /* Dart.app */,
-				2D802700209A8502001ECD84 /* DartTests.xctest */,
-				2D80270B209A8502001ECD84 /* DartUITests.xctest */,
+				2D802700209A8502001ECD84 /* DartIt!Tests.xctest */,
+				2D80270B209A8502001ECD84 /* DartIt!UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D8026E8209A84F6001ECD84 /* Dart */ = {
+		2D8026E8209A84F6001ECD84 /* DartIt! */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D802714209A8502001ECD84 /* Build configuration list for PBXNativeTarget "Dart" */;
+			buildConfigurationList = 2D802714209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartIt!" */;
 			buildPhases = (
 				CBCAC5A62BAEE64D7C25DBA8 /* [CP] Check Pods Manifest.lock */,
 				2D8026E5209A84F6001ECD84 /* Sources */,
@@ -185,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = Dart;
+			name = "DartIt!";
 			productName = Dart;
 			productReference = 2D8026E9209A84F6001ECD84 /* Dart.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D8026FF209A8502001ECD84 /* DartTests */ = {
+		2D8026FF209A8502001ECD84 /* DartIt!Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D802717209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartTests" */;
+			buildConfigurationList = 2D802717209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartIt!Tests" */;
 			buildPhases = (
 				FA0D60467EF65D4DA2707E6E /* [CP] Check Pods Manifest.lock */,
 				2D8026FC209A8502001ECD84 /* Sources */,
@@ -204,14 +204,14 @@
 			dependencies = (
 				2D802702209A8502001ECD84 /* PBXTargetDependency */,
 			);
-			name = DartTests;
+			name = "DartIt!Tests";
 			productName = DartTests;
-			productReference = 2D802700209A8502001ECD84 /* DartTests.xctest */;
+			productReference = 2D802700209A8502001ECD84 /* DartIt!Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2D80270A209A8502001ECD84 /* DartUITests */ = {
+		2D80270A209A8502001ECD84 /* DartIt!UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D80271A209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartUITests" */;
+			buildConfigurationList = 2D80271A209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartIt!UITests" */;
 			buildPhases = (
 				58638434DC8BE68511C060EA /* [CP] Check Pods Manifest.lock */,
 				2D802707209A8502001ECD84 /* Sources */,
@@ -223,9 +223,9 @@
 			dependencies = (
 				2D80270D209A8502001ECD84 /* PBXTargetDependency */,
 			);
-			name = DartUITests;
+			name = "DartIt!UITests";
 			productName = DartUITests;
-			productReference = 2D80270B209A8502001ECD84 /* DartUITests.xctest */;
+			productReference = 2D80270B209A8502001ECD84 /* DartIt!UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D8026E4209A84F6001ECD84 /* Build configuration list for PBXProject "Dart" */;
+			buildConfigurationList = 2D8026E4209A84F6001ECD84 /* Build configuration list for PBXProject "DartIt!" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -264,9 +264,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D8026E8209A84F6001ECD84 /* Dart */,
-				2D8026FF209A8502001ECD84 /* DartTests */,
-				2D80270A209A8502001ECD84 /* DartUITests */,
+				2D8026E8209A84F6001ECD84 /* DartIt! */,
+				2D8026FF209A8502001ECD84 /* DartIt!Tests */,
+				2D80270A209A8502001ECD84 /* DartIt!UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -411,12 +411,12 @@
 /* Begin PBXTargetDependency section */
 		2D802702209A8502001ECD84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D8026E8209A84F6001ECD84 /* Dart */;
+			target = 2D8026E8209A84F6001ECD84 /* DartIt! */;
 			targetProxy = 2D802701209A8502001ECD84 /* PBXContainerItemProxy */;
 		};
 		2D80270D209A8502001ECD84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D8026E8209A84F6001ECD84 /* Dart */;
+			target = 2D8026E8209A84F6001ECD84 /* DartIt! */;
 			targetProxy = 2D80270C209A8502001ECD84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,7 +611,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dart.app/Dart";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DartIt!.app/DartIt!";
 			};
 			name = Debug;
 		};
@@ -633,7 +633,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dart.app/Dart";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DartIt!.app/DartIt!";
 			};
 			name = Release;
 		};
@@ -682,7 +682,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8026E4209A84F6001ECD84 /* Build configuration list for PBXProject "Dart" */ = {
+		2D8026E4209A84F6001ECD84 /* Build configuration list for PBXProject "DartIt!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D802712209A8502001ECD84 /* Debug */,
@@ -691,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D802714209A8502001ECD84 /* Build configuration list for PBXNativeTarget "Dart" */ = {
+		2D802714209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartIt!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D802715209A8502001ECD84 /* Debug */,
@@ -700,7 +700,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D802717209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartTests" */ = {
+		2D802717209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartIt!Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D802718209A8502001ECD84 /* Debug */,
@@ -709,7 +709,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D80271A209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartUITests" */ = {
+		2D80271A209A8502001ECD84 /* Build configuration list for PBXNativeTarget "DartIt!UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D80271B209A8502001ECD84 /* Debug */,

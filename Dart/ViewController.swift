@@ -16,6 +16,7 @@ import VariousViewsEffects
 class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelControlDelegate {
     
     
+    @IBOutlet weak var internetError: UILabel!
     @IBOutlet weak var restartButton: UIButton!
     @IBOutlet weak var circle: UIImageView!
     @IBOutlet weak var result: UILabel!
@@ -46,7 +47,8 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         result.isHidden = true
         dinings = getData()
         if (dinings.count == 0) {
-            empty.text = "Must be connected to the Internet!"
+            empty.text = "Sorry, either no dining halls are open, OR"
+            internetError.text = "You must be connected to the Internet!"
         }
         else {
         let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
@@ -102,7 +104,7 @@ class ViewController: UIViewController, SpinWheelControlDataSource, SpinWheelCon
         do {
             let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
             let doc: Document = try! SwiftSoup.parse(myHTMLString)
-            let mainContent: Elements = try! doc.select("#main-content").select("div").select("h2 ~ div").select(".whole-col")
+            let mainContent: Elements = try! doc.select("#main-content").select("div").select("h2 ~ div").select(".half-col, .full-col, .whole-col")
             
             var food = [String]()
             
