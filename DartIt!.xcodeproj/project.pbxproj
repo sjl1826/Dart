@@ -18,6 +18,7 @@
 		9197131A69A629F928FB580F /* Pods_DartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BA7E38B5FC109D67A532C6 /* Pods_DartTests.framework */; };
 		9EDBC44859823D26A32F5758 /* Pods_Dart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD455753AE3C402E7E511A9 /* Pods_Dart.framework */; };
 		BD1825FF20A4AD0E00DBA060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1825FD20A4AD0E00DBA060 /* Main.storyboard */; };
+		BD7E7BB220A7E969001D4B78 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E7BB120A7E969001D4B78 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B3BA7E38B5FC109D67A532C6 /* Pods_DartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB85960A1F8BC6F32FBD5293 /* Pods_DartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1825FE20A4AD0E00DBA060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD7E7BB120A7E969001D4B78 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				BD1825FD20A4AD0E00DBA060 /* Main.storyboard */,
 				2D8026FB209A8501001ECD84 /* Info.plist */,
 				2D8026F3209A84F6001ECD84 /* Dart.xcdatamodeld */,
+				BD7E7BB120A7E969001D4B78 /* StartViewController.swift */,
 			);
 			path = Dart;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D8026EF209A84F6001ECD84 /* ViewController.swift in Sources */,
+				BD7E7BB220A7E969001D4B78 /* StartViewController.swift in Sources */,
 				2D8026ED209A84F6001ECD84 /* AppDelegate.swift in Sources */,
 				2D8026F5209A84F6001ECD84 /* Dart.xcdatamodeld in Sources */,
 			);
